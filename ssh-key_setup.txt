@@ -1,0 +1,46 @@
+
+### for Windows ------------------>
+
+  ssh-keygen -t rsa -b 4096 -C "rijalsujan09@gmail.com"
+
+  eval "$(ssh-agent -s)"
+
+  ssh-add ~/.ssh/id_rsa
+
+  cat ~/.ssh/id_rsa.pub
+
+
+### for macOS ------------------>
+
+  ssh-keygen -t rsa -b 4096 
+
+  eval "$(ssh-agent -s)"
+
+  ssh-add -K ~/.ssh/id_rsa
+
+  pbcopy < ~/.ssh/id_rsa.pub
+
+
+### for Windows ------------------>
+
+  ssh-keygen -t rsa -b 4096 -C "your email"
+
+  eval "$(ssh-agent -s)"
+
+  ssh-add ~/.ssh/id_rsa
+
+  clip < ~/.ssh/id_rsa.pub
+
+
+### for Windows ------------------>
+  if you want to write different comment 
+    ssh-keygen -c -f ~/.ssh/id_rsa
+  
+  if you want to use different algorithm
+    ssh-keygen -t ecdsa -b 521 -C "rijalsujan09@gmail.com"
+    ssh-keygen -t ed25519 -C "rijalsujan09@gmail.com"
+
+
+
+
+
