@@ -1,0 +1,17 @@
+1. Change the hostname temporarily
+    sudo hostnamectl set-hostname sujan_vm
+
+2. Update the /etc/hostname file
+    sudo nano /etc/hostname
+
+3. Update the /etc/hosts file
+   sudo nano /etc/hosts
+
+   127.0.0.1 localhost
+   127.0.1.1 worker01
+   Change it to:
+   127.0.0.1 localhost
+   127.0.1.1 sujan_vm
+
+4. Reboot the machine
+sudo reboot
